@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anomymous function</title>
+        
+        <script type="text/javascript">
+            var result = (function(email_id){
+                            var atpos= email_id.indexOf("@");
+                            var dotpos=email_id.lastIndexOf(".");
+                            if(atpos<1 || atpos+2 > dotpos || dotpos+2>=email_id.length)
+                                {
+                                    return false;
+                                }
+                            else
+                                {
+            
+                                    return true;
+                                }   
+                        })('ratna@gmail.com');
+            document.write(result);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
